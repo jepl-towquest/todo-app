@@ -19,7 +19,7 @@ function App() {
   // })
 
   // Shorthand arrow function on one line with implicit return as there is only 1 component
-  const jokeComponents = jokesData.map(joke => <Joke question={joke.question} punchline={joke.punchline} />)
+  const jokeComponents = jokesData.map(joke => <Joke key={joke.id} question={joke.question} punchline={joke.punchline} />)
 
   return (
     <div>
