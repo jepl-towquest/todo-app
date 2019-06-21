@@ -3,7 +3,7 @@ import Product from './components/Product'
 import vschoolProducts from './data/vschoolProducts'
 
 function App() {
-  const productComponents = vschoolProducts.map(prod => <Product key={prod.id} name={prod.name} price={prod.price} description={prod.description} />)
+  const productComponents = vschoolProducts.map(item => <Product key={item.id} product={item} />)
 
   return(
     <div>
