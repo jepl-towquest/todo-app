@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 //import App from './AppToDo';
-//import App from './AppClassPractice';
 import App from './AppState'
 import './index.css';
 
