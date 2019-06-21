@@ -6,10 +6,12 @@ class App extends Component {
     this.state = {
       count: 0
     }
+
+    this.handleClick = this.handleClick.bind(this)
   }
 
   handleClick() {
-    console.log("Button clicked")
+    this.setState({count: 1})
   }
 
   render() {
