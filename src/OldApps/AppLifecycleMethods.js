@@ -8,6 +8,14 @@ class App extends Component {
     }
   }
 
+  static getDerivedStateFromProps(props, state) {
+    // return the new, updated state based on props
+  }
+
+  getSnapshotBeforeUpdate() {
+    // Create a backup of the current way things are
+  }
+
   // componentWillMount() {
   //   // DEPRECATED 
   // }
