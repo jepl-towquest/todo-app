@@ -1,11 +1,21 @@
-import React from 'react'
+import React, {Component} from 'react'
 
-function App() {
-  return(
-    <div>
-      <h1>You are currently loggen (in/out)</h1>
-    </div>
-  )
+class App extends Component {
+  constructor() {
+    super()
+    this.state = {
+      isLoggedIn: true
+    }
+  }
+
+  render() {
+    const isLoggedIn = this.state.isLoggedIn
+    return(
+      <div>
+        <h1>You are currently logged ({isLoggedIn ? "in" : "out"})</h1>
+      </div>
+    )
+  }  
 }
 
 export default App
