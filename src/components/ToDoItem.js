@@ -1,8 +1,10 @@
 import React from 'react';
 
 function ToDoItem(props) {
+  let listItemStyle = props.item.completed ? "todo-item-complete" : "todo-item"
+
   return (
-    <div className="todo-item">
+    <div className={listItemStyle}>
       <input 
         type="checkbox" 
         checked={props.item.completed} 
