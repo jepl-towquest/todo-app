@@ -1,15 +1,24 @@
-import React, {component} from 'react'
+import React, {Component} from 'react'
+import Conditional from '../Conditional'
 
-class App extends component {
+class App extends Component {
   constructor() {
     super()
-    this.state = {}
+    this.state = {
+      isLoading: true
+    }
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      this.setState({isLoading: false})
+    }, 1500)
   }
 
   render() {
     return(
       <div>
-        Code goes here
+        <Conditional isLoading={this.state.isLoading} />
       </div>
     )
   }
