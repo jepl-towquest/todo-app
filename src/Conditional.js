@@ -5,11 +5,11 @@ function Conditional(props) {
     return(
       <h1>Loading. . .</h1>
     )
-  } else {
-    return(
-      <div>Some coool stuff about conditional rendering...</div>
-    )
-  }  
+  }
+  
+  return(
+    <div>Some coool stuff about conditional rendering...</div>
+  )
 }
 
 export default Conditional
