@@ -43,6 +43,21 @@ code {
   color: #333333;
 }
 
+.todo-item-complete {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 20px 0;
+  width: 70%;
+  border-bottom: 1px solid #cecece;
+  font-family: Roboto, sans-serif;
+  font-weight: 100;
+  font-size: 15;
+  color: #cfcfcf;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
 input[type=checkbox] {
   margin-right: 10px;
   font-size: 30px;
