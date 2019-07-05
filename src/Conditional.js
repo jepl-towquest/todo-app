@@ -4,7 +4,7 @@ function Conditional(props) {
   return(
     <div>
       {
-        props.isLoading === true ? <h1>Loading. . .</h1> : <div>Some coool stuff about conditional rendering...</div>
+        props.isLoading ? <h1>Loading. . .</h1> : <div>Some coool stuff about conditional rendering...</div>
       }
     </div>
   )
