@@ -40,6 +40,7 @@ class App extends Component {
           onChange={this.handleChange} 
         />
         <p>{this.state.firstName} {this.state.lastName}</p>
+        This has been changed!
       </form>
     )
   }
